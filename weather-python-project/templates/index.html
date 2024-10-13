@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Report</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Weather Report</h1>
+    <div class="weather-form">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="fetchWeatherBtn">Get Weather</button>
+    </div>
+    <div class="weather-result hidden" id="weatherResult">
+      <h2 id="cityName"></h2>
+      <p id="temperature"></p>
+      <p id="description"></p>
+      <p id="humidity"></p>
+      <p id="windSpeed"></p>
+      <p id="pressure"></p>
+      <p id="visibility"></p>
+      <p id="uvIndex"></p>
+      <p id="sunrise"></p>
+      <p id="sunset"></p>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
