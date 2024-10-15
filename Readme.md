@@ -13,7 +13,6 @@ A simple weather report application that allows users to fetch current weather d
 
 # Tech Stack
 
-
 - **Frontend**: 
 HTML, CSS, JavaScript
 - **Backend**: Any REST API that provides weather data (e.g., OpenWeatherMap)
